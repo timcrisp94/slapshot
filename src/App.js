@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
 import './App.css';
 import JaromirJagr from './pages/JaromirJagr/JaromirJagr';
+import BarryMelrose from './pages/BarryMelrose/BarryMelrose';
 
 function App() {
   const [navItems, setNavItems] = useState([
@@ -17,6 +18,7 @@ function App() {
       <NavBar navItems={navItems} />
       <Routes>
         <Route path="/jaromir-jagr" element={<JaromirJagr />}/>
+        <Route path="/barry-melrose" element={<BarryMelrose />}/>
       </Routes>
     </>
   );
