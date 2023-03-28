@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import NavBar from './components/NavBar/NavBar'
 
 import './App.css';
 
@@ -11,11 +12,9 @@ function App() {
   ])
   
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>This is our app</h1>
-      </header>
-    </div>
+    <>
+      <NavBar navItems={navItems} />
+    </>
   );
 }
 
